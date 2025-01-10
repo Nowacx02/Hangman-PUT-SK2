@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -std=c++17 -O2 -Wall -Wextras
+CXXFLAGS = -std=c++17 -O2 -Wall -Wextra
 
 SERVER = server
 CLIENT = klient.py
