@@ -370,6 +370,8 @@ int main() {
     server_addr.sin_addr.s_addr = INADDR_ANY;
     server_addr.sin_port = htons(PORT);
 
+    std::cout << "Serwer dziala na porcie: "<<PORT<<std::endl;
+
     if (bind(server_fd, (sockaddr*)&server_addr, sizeof(server_addr)) == -1) {
         perror("bind");
         close(server_fd);
